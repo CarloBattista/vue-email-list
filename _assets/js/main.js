@@ -18,6 +18,9 @@ createApp({
         return {
             // Array vuoto vuota per email
             emailGenerated: [],
+
+            // Variabile booleana per controllare se tutte le email sono state generate
+            allEmailsGenerated: false,
         }
     },
     created(){
