@@ -31,6 +31,10 @@ createApp({
             .then( (res) => {
                 // Aggiunge l'email generata all'array vuoto
                 this.emailGenerated.push(res.data.response)
+                // Controllo se tutte le email sono state generate
+                if(this.emailGenerated.length === 10){
+                    this.allEmailsGenerated = true
+                }
             } )
         }
     },
