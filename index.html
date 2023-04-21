@@ -14,7 +14,7 @@
 
     <div id="app">
         <ul v-if="allEmailsGenerated" class="container_email">
-            <li v-for="email in emailGenerated" class="email">{{ emailGenerated }}</li>
+            <li v-for="email in emailGenerated" :key="email" class="email">{{ email }}</li>
         </ul>
     </div>
     
