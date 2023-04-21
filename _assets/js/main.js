@@ -16,19 +16,12 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            // Variabile vuota per email
-            emailGenerated: '',
+            // Array vuoto vuota per email
+            emailGenerated: [],
         }
     },
     created(){
-        // Link API email
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then( (res) => {
-            // Stampo in console l'email generata dall' API
-            console.log(res.data.response)
-            // Stampo in pagina l'email generata dall' API
-            this.emailGenerated = res.data.response
-        } )
+        
     },
     methods: {
 
