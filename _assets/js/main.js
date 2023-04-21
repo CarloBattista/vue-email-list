@@ -18,5 +18,14 @@ createApp({
         return {
             message: 'Hello Vue!'
         }
-    }
+    },
+    created(){
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then( (res) => {
+            console.log(res)
+        } )
+    },
+    methods: {
+
+    },
 }).mount('#app')
