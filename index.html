@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue-email-list</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="./_assets/css/main.css">
+
 </head>
 <body>
 
-    <div id="app">{{ emailGenerated }}</div>
+    <div id="app">
+        <ul class="container_email">
+            <li class="email">{{ emailGenerated }}</li>
+        </ul>
+    </div>
     
     <!-- SCRIPT -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
