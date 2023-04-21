@@ -28,6 +28,10 @@ createApp({
         for(let i = 0; i < 10; i++){
             // Richiamo l'API
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then( (res) => {
+                // Aggiunge l'email generata all'array vuoto
+                this.emailGenerated.push(res.data.response)
+            } )
         }
     },
     methods: {
