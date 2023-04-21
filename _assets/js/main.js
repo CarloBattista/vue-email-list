@@ -26,7 +26,8 @@ createApp({
     created(){
         // Ciclio for che arriva fino a un massimo di 10
         for(let i = 0; i < 10; i++){
-            
+            // Richiamo l'API
+            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         }
     },
     methods: {
