@@ -13,8 +13,8 @@
 <body>
 
     <div id="app">
-        <ul class="container_email">
-            <li class="email">{{ emailGenerated }}</li>
+        <ul v-if="allEmailsGenerated" class="container_email">
+            <li v-for="email in emailGenerated" class="email">{{ emailGenerated }}</li>
         </ul>
     </div>
     
